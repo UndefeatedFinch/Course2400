@@ -1,0 +1,125 @@
+/* ChezFur.css - Default styles for small screens */
+
+/* Body styling for small screens */
+body {
+    background-color: peru; /* Background color for body */
+    color: bisque; /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: peru; /* Background color for header */
+    padding: 10px; /* Added padding for spacing */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between title and logo */
+    align-items: center; /* Vertically center content */
+    background-image: url('images/your-cat-image.png'); /* Use the uploaded image as background */
+    background-repeat: no-repeat; /* No image repetition */
+    background-position: right center; /* Position the image to the right */
+    background-size: contain; /* Ensure the entire image is visible */
+}
+
+header h1, header h3 {
+    margin: 0; /* Remove margin for headings */
+    text-align: left; /* Align title text to the left */
+}
+
+/* Main section styling */
+main {
+    background-color: saddlebrown; /* Background color for main area */
+    color: gainsboro; /* Text color for main area */
+    padding: 20px; /* Added padding for spacing */
+    text-align: left; /* Align main content to the left */
+}
+
+/* Styling for paragraphs */
+p {
+    line-height: 1.6; /* Improved readability */
+}
+
+/* Image in the main section */
+.responsive-image {
+    max-width: 100%; /* Responsive image for different screen sizes */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures no inline spacing */
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0; /* Remove padding */
+    text-align: left; /* Align navigation links to the left */
+}
+
+nav ul li {
+    display: inline-block; /* Use inline-block for better control */
+    margin: 0 10px; /* Add space between links */
+}
+
+nav ul li a {
+    color: bisque; /* Navigation link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Add padding for clickable area */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Address section styling */
+address {
+    font-style: normal; /* Default font style */
+    text-align: left; /* Left align the address text */
+}
+
+/* Footer styling */
+footer {
+    background-color: peru; /* Footer background */
+    color: bisque; /* Footer text color */
+    padding: 10px; /* Added padding */
+    text-align: center; /* Center the text */
+    position: fixed; /* Fixes footer at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media query for larger screens */
+@media (min-width: 750px) {
+    /* Body styling for larger screens */
+    body {
+        background-color: maroon; /* Background color for larger screens */
+        color: moccasin; /* Text color for larger screens */
+        font-family: Georgia, serif; /* Font family for larger screens */
+    }
+    
+    /* Main section styling for larger screens */
+    main {
+        padding: 40px; /* Increase padding for larger screens */
+        max-width: 2000px; /* Limit the width of the main content */
+        margin: 0 auto; /* Center the main content */
+    }
+
+    /* Header styling for larger screens */
+    header {
+        padding: 20px; /* Increase padding */
+        max-width: 2000px; /* Limit width */
+        margin: 0 auto; /* Center the header */
+        background-position: right center; /* Maintain right alignment for larger screens */
+    }
+
+    /* Footer styling for larger screens */
+    footer {
+        position: relative; /* Remove fixed positioning for larger screens */
+        max-width: 2000px; /* Limit width */
+        margin: 0 auto; /* Center the footer */
+    }
+
+    /* Navigation styling for larger screens */
+    nav ul li {
+        margin: 0 25px; /* Increase space between navigation links */
+    }
+}
