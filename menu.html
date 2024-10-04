@@ -21,8 +21,14 @@
                 <h3>By Suzy Schaffer</h3> <!-- Subtitle with the author's name -->
             </div>
             <!-- Logo for the cafe -->
-            <img src="images/LogoLarge.png" alt="Chez Fur Logo" class="responsive-logo"> <!-- Added responsive logo image -->
-        </div>
+            <picture>
+                <!-- 小屏幕时显示小 Logo -->
+                <source srcset="images/LogoSmall.png" media="(max-width: 750px)">
+                
+                <!-- 大屏幕时显示大 Logo -->
+                <img src="images/LogoLarge.png" alt="Chez Fur Logo">
+            </picture><!-- Logo for the cafe -->
+            </div>
     </header>
 
     <!-- Navigation menu for navigating between different pages of the website -->
@@ -33,17 +39,36 @@
             <li><a href="hosts.html">Our Hosts</a></li> <!-- Link to the hosts page -->
             <li><a href="contact.html">Contact</a></li> <!-- Link to the contact page -->
         </ul>
+        <aside>
+            <p>Enjoy our food while you visit with our friendly hosts! We have selections for appetites big and small.</p>
+        </aside>
     </nav>
 
     <!-- Main content area of the page -->
     <main>
-        <h2>Food and Drink</h2>
+        <h2>Our Menu</h2>
         <ul>
-            <li>Nibbles</li>
-            <li>Fancy Feasts</li>
-            <li>Treats</li>
-            <li>Drinks</li>
+            <h3>Nibbles</h3>
+            <dl>
+                <dt>Purrfect Salad</dt>
+                <dd>Small salad with arugula, tomatoes, carrots, cucumber, and crunchy croutons with vinaigrette dressing. $7</dd>
+            </dl>
+            <h3>Fancy Feasts</h3>
+            <dl>
+                <dt>Too Too Tuna</dt>
+                <dd>Fresh Albacore Tuna with lettuce, tomato, vegan mayo, and your choice of bread. $12</dd>
+            </dl>
+            <h3>Treats</h3>
+            <dl>
+                <dt>Cat Pop</dt>
+                <dd>Vanilla cake pop with chocolate icing and whiskers. $3</dd>
+            </dl>
+            <h3>Drinks</h3>
         </ul>
+        
+        <div class="allergy-info">
+            <p>Please inform our staff of any food sensitivities before placing your order.</p>
+        </div>        
     </main>
 
     <!-- Footer section with copyright information and contact email -->
