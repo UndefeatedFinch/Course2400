@@ -1,125 +1,152 @@
-/* ChezFur.css - Default styles for small screens */
-
-/* Body styling for small screens */
+/* 全局样式 */
 body {
-    background-color: peru; /* Background color for body */
-    color: bisque; /* Text color */
-    font-family: Arial, sans-serif; /* Font family */
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header styling */
+/* Header 样式 */
 header {
-    background-color: peru; /* Background color for header */
-    padding: 10px; /* Added padding for spacing */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: space-between; /* Space between title and logo */
-    align-items: center; /* Vertically center content */
-    background-image: url('images/your-cat-image.png'); /* Use the uploaded image as background */
-    background-repeat: no-repeat; /* No image repetition */
-    background-position: right center; /* Position the image to the right */
-    background-size: contain; /* Ensure the entire image is visible */
+    background-color: #005f73;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1, header h3 {
-    margin: 0; /* Remove margin for headings */
-    text-align: left; /* Align title text to the left */
+    color: #e08514;
+    display: flex;
+    justify-content: flex-start; /* Align items to the start (left side) */
+    align-items: center; /* Vertically center both logo and text */
+    width: 100%; /* Ensure the header takes up the full width of the page */
 }
 
-/* Main section styling */
-main {
-    background-color: saddlebrown; /* Background color for main area */
-    color: gainsboro; /* Text color for main area */
-    padding: 20px; /* Added padding for spacing */
-    text-align: left; /* Align main content to the left */
+header h1 {
+    font-family: 'Brush Script MT', cursive; /* Fallback to cursive if Brush Script MT isn't available */
+    font-size: 48px; /* Adjust size as needed */
+    color: #f5e5b9; /* Adjust the color to match your design */
 }
 
-/* Styling for paragraphs */
-p {
-    line-height: 1.6; /* Improved readability */
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Align the text and logo on both sides */
+    align-items: center; /* Vertically center-align the logo and text */
+    gap: auto; /* Add space between the logo and text */
 }
 
-/* Image in the main section */
-.responsive-image {
-    max-width: 100%; /* Responsive image for different screen sizes */
+/* Logo 样式 */
+.responsive-logo {
+    margin-left: auto; /* Automatically push the logo to the far right */
+    max-width: 150px; /* Adjust the logo size */
     height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures no inline spacing */
-    margin: 20px 0; /* Add margin for spacing */
 }
 
-/* Navigation styling */
-nav ul {
-    list-style-type: none; /* Remove bullet points from list */
-    padding: 0; /* Remove padding */
-    text-align: left; /* Align navigation links to the left */
+/* Main 样式 */
+main {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    background-color: rgba(251, 185, 185, 0.579); /* White overlay with 70% opacity */
 }
 
-nav ul li {
-    display: inline-block; /* Use inline-block for better control */
-    margin: 0 10px; /* Add space between links */
-}
-
+/* 导航链接样式 */
 nav ul li a {
-    color: bisque; /* Navigation link color */
-    text-decoration: none; /* Remove underline from links */
-    padding: 5px 10px; /* Add padding for clickable area */
+    color: #ffafcc;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
+    color: #4abc30;
 }
 
-/* Address section styling */
-address {
-    font-style: normal; /* Default font style */
-    text-align: left; /* Left align the address text */
+nav ul li a:visited {
+    color: #1985c3;
 }
 
-/* Footer styling */
+nav ul li a:hover {
+    font-size: 1.1em;
+}
+
+/* Footer 样式 */
 footer {
-    background-color: peru; /* Footer background */
-    color: bisque; /* Footer text color */
-    padding: 10px; /* Added padding */
-    text-align: center; /* Center the text */
-    position: fixed; /* Fixes footer at the bottom */
+    background-color: #005f73;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/* Media query for larger screens */
+/* Make the navigation menu items display in a single row */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Apply Flexbox to align items horizontally */
+    padding: 0; /* Remove default padding */
+}
+
+nav ul li {
+    margin: 0 20px; /* Add spacing between menu items */
+}
+
+/* 媒体查询：大屏幕 */
 @media (min-width: 750px) {
-    /* Body styling for larger screens */
     body {
-        background-color: maroon; /* Background color for larger screens */
-        color: moccasin; /* Text color for larger screens */
-        font-family: Georgia, serif; /* Font family for larger screens */
+        background-color: maroon;
+        color: moccasin;
+        font-family: Georgia, serif;
     }
-    
-    /* Main section styling for larger screens */
+
     main {
-        padding: 40px; /* Increase padding for larger screens */
-        max-width: 2000px; /* Limit the width of the main content */
-        margin: 0 auto; /* Center the main content */
+        padding: 40px;
+        max-width: 2000px;
+        margin: 0 auto;
     }
 
-    /* Header styling for larger screens */
     header {
-        padding: 20px; /* Increase padding */
-        max-width: 2000px; /* Limit width */
-        margin: 0 auto; /* Center the header */
-        background-position: right center; /* Maintain right alignment for larger screens */
+        padding: 20px;
+        max-width: 2000px;
+        margin: 0 auto;
+        background-position: right center;
     }
 
-    /* Footer styling for larger screens */
     footer {
-        position: relative; /* Remove fixed positioning for larger screens */
-        max-width: 2000px; /* Limit width */
-        margin: 0 auto; /* Center the footer */
+        position: relative;
+        max-width: 2000px;
+        margin: 0 auto;
     }
 
-    /* Navigation styling for larger screens */
     nav ul li {
-        margin: 0 25px; /* Increase space between navigation links */
+        margin: 0 25px;
     }
+
+    .responsive-logo {
+        max-width: 200px; /* Larger logo for bigger screens */
+    }
+
+    .responsive-image {
+        width: 200px; /* Increase image width for larger screens */
+        height: 200px; /* Increase image height for larger screens */
+    }
+}
+
+/* Default size for cat images */
+.responsive-image {
+    width: 200px; /* Increase image width */
+    height: 200px; /* Increase image height */
+    border-radius: 50%; /* Keep the image in a circular shape */
+    display: block;
+    margin: 20px auto; /* Center the image and add space between images */
+}
+
+figcaption {
+    text-align: center; /* Centers the text */
+    font-style: italic; /* Optional: Makes the text italic for style */
+    margin-top: 10px; /* Adds some space above the caption */
 }
