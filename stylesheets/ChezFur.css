@@ -34,7 +34,7 @@ header h1 {
     display: flex;
     justify-content: space-between; /* Align the text and logo on both sides */
     align-items: center; /* Vertically center-align the logo and text */
-    gap: auto; /* Add space between the logo and text */
+    gap: 20px; /* Add space between the logo and text */
 }
 
 /* Logo 样式 */
