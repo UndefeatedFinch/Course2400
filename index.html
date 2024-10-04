@@ -20,9 +20,14 @@
                 <h1>Chez Fur</h1> <!-- Main title of the page -->
                 <h3>By Suzy Schaffer</h3> <!-- Subtitle with the author's name -->
             </div>
-            <!-- Logo for the cafe -->
-            <img src="images/LogoLarge.png" alt="Chez Fur Logo" class="responsive-logo"> <!-- Added responsive logo image -->
-        </div>
+            <picture>
+                <!-- 小屏幕时显示小 Logo -->
+                <source srcset="images/LogoSmall.png" media="(max-width: 750px)">
+                
+                <!-- 大屏幕时显示大 Logo -->
+                <img src="images/LogoLarge.png" alt="Chez Fur Logo">
+            </picture><!-- Logo for the cafe -->
+            </div>
     </header>
 
     <!-- Navigation menu for navigating between different pages of the website -->
