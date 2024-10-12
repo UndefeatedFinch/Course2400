@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and viewport settings for responsive design -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for proper text rendering -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <meta name="description" content="Chez Fur welcomes you to enjoy coffee and snacks while being entertained by our friendly furry hosts."> <!-- Description for SEO purposes -->
+    
+    <!-- Link to the external CSS file for styling the page -->
+    <link rel="stylesheet" href="stylesheets/ChezFur.css"> <!-- Path to the CSS file -->
+    
+    <!-- Title of the webpage -->
+    <title>Chez Fur</title> <!-- Title shown on the browser tab -->
+</head>
+<body>
+    <!-- Header section with the main title and subtitle, including a logo -->
+    <header>
+        <div class="header-content">
+            <div class="title-section">
+                <h1>Chez Fur</h1> <!-- Main title of the page -->
+                <h3>By Suzy Schaffer</h3> <!-- Subtitle with the author's name -->
+            </div>
+            <!-- Logo for the cafe -->
+            <picture>
+                <!-- 小屏幕时显示小 Logo -->
+                <source srcset="images/LogoSmall.png" media="(max-width: 750px)">
+                
+                <!-- 大屏幕时显示大 Logo -->
+                <img src="images/LogoLarge.png" alt="Chez Fur Logo">
+            </picture><!-- Logo for the cafe -->
+            </div>
+    </header>
+
+    <!-- Navigation menu for navigating between different pages of the website -->
+    <div class="row">
+        <div class="column">
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
+                    <li><a href="menu.html">Menu</a></li> <!-- Link to the menu page -->
+                    <li><a href="hosts.html">Our Hosts</a></li> <!-- Link to the hosts page -->
+                    <li><a href="contact.html">Contact</a></li> <!-- Link to the contact page -->
+                </ul>
+                <aside>
+                    <p>Enjoy our food while you visit with our friendly hosts! We have selections for appetites big and small.</p>
+                </aside>
+            </nav>
+        </div>
+        <div class="column">
+        <!-- Main content area of the page -->
+            <main>
+                <img src="images/Hero-image.jpg" alt="Hero image of the cafe" class="hero-image"> 
+
+                <h2>Our Menu</h2>
+                <ul>
+                    <h3>Nibbles</h3>
+                    <dl>
+                        <dt>Purrfect Salad</dt>
+                        <dd>Small salad with arugula, tomatoes, carrots, cucumber, and crunchy croutons with vinaigrette dressing. $7</dd>
+                    </dl>
+                    <h3>Fancy Feasts</h3>
+                    <dl>
+                        <dt>Too Too Tuna</dt>
+                        <dd>Fresh Albacore Tuna with lettuce, tomato, vegan mayo, and your choice of bread. $12</dd>
+                    </dl>
+                    <h3>Treats</h3>
+                    <dl>
+                        <dt>Cat Pop</dt>
+                        <dd>Vanilla cake pop with chocolate icing and whiskers. $3</dd>
+                    </dl>
+                    <h3>Drinks</h3>
+                </ul>
+                
+                <div class="allergy-info">
+                    <p>Please inform our staff of any food sensitivities before placing your order.</p>
+                </div>        
+            </main>
+        </div>
+        <!-- Footer section with copyright information and contact email -->
+        
+    </div>
+    <footer>
+        <p>&copy; 2024 Suzy Schaffer | <a href="mailto:Wenjing@Cao.com">Wenjing@Cao.com</a></p> <!-- Added email link for contact -->
+    </footer>
+</body>
+</html>
