@@ -32,38 +32,60 @@
     </header>
 
     <!-- Navigation menu for navigating between different pages of the website -->
-    <nav aria-label="Main Navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li> <!-- Link to the home page -->
-            <li><a href="menu.html">Menu</a></li> <!-- Link to the menu page -->
-            <li><a href="hosts.html">Our Hosts</a></li> <!-- Link to the hosts page -->
-            <li><a href="contact.html">Contact</a></li> <!-- Link to the contact page -->
-        </ul>
-    </nav>
-
+    <div class="layout"> <!-- Added a layout container for flexbox -->
+        <nav class="nav-container" aria-label="Main Navigation"> <!-- Changed to flexbox nav -->
+            <a href="index.html">Home</a> <!-- Link to the home page -->
+            <a href="menu.html">Menu</a> <!-- Link to the menu page -->
+            <a href="hosts.html">Our Hosts</a> <!-- Link to the hosts page -->
+            <a href="contact.html">Contact</a> <!-- Link to the contact page -->
+        </nav>
     <!-- Main content area of the page -->
-    <main>
-        <h2>Your Hosts page</h2> <!-- Subheading for the main content -->
-        
-        <figure>
-            <img src="images/cat1.jpg" alt="Cat Host 1" class="responsive-image">
-            <figcaption>Fluffy - The Shy One</figcaption>
-        </figure>
-        <figure>
-            <img src="images/cat2.jpg" alt="Cat Host 2" class="responsive-image">
-            <figcaption>Whiskers - Loves Attention</figcaption>
-        </figure>
-        <figure>
-            <img src="images/cat3.jpg" alt="Cat Host 3" class="responsive-image">
-            <figcaption>Shadow - Quiet Observer</figcaption>
-        </figure>
+        <main>
+            <div class="image-gallery">
+                <a href="https://www.localpetshop.com" target="_blank">
+                    <img src="images/sponsorLogo1.jpg" alt="Sponsor Logo" class="responsive-logo">
+                </a>
+                <a href="https://www.rover.com/become-a-sitter/" target="_blank">
+                    <img src="images/sponsorLogo2.jpg" alt="Sponsor 2 Logo" class="responsive-logo">
+                </a>
+                <a href="https://wagwalking.com/" target="_blank">
+                    <img src="images/sponsorLogo3.jpg" alt="Sponsor 3 Logo" class="responsive-logo">
+                </a>
+            </div>
 
-        <!-- Corrected image link structure -->
-        <a href="https://www.localpetshop.com" target="_blank">
-            <img src="images/sponsorLogo.jpg" alt="Sponsor Logo" class="responsive-image">
-        </a> <!-- Image link to external sponsor -->
-    </main>
+            <div class="image-gallery">
+                <figure>
+                    <img src="images/cat1.jpg" alt="Cat Host 1" class="responsive-image">
+                    <figcaption>Fluffy - The Shy One</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat2.jpg" alt="Cat Host 2" class="responsive-image">
+                    <figcaption>Whiskers - Loves Attention</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat3.jpg" alt="Cat Host 3" class="responsive-image">
+                    <figcaption>Shadow - Quiet Observer</figcaption>
+                </figure>
 
+                <figure>
+                    <img src="images/cat4.jpg" alt="Cat Host 3" class="responsive-image">
+                    <figcaption>Shadow - Quiet Observer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat5.jpg" alt="Cat Host 4" class="responsive-image">
+                    <figcaption>Shadow - Quiet Observer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat6.jpg" alt="Cat Host 5" class="responsive-image">
+                    <figcaption>Shadow - Quiet Observer</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/cat7.jpg" alt="Cat Host 6" class="responsive-image">
+                    <figcaption>Shadow - Quiet Observer</figcaption>
+                </figure>
+            </div>
+        </main>
+    </div>
     <!-- Footer section with copyright information and contact email -->
     <footer>
         <p>&copy; 2024 Suzy Schaffer | <a href="mailto:Wenjing@Cao.com">Wenjing@Cao.com</a></p> <!-- Added email link for contact -->
