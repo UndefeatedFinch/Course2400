@@ -1,0 +1,213 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Apply base font and styles for the body */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    /* Style for the header, including background and layout */
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo img {
+    /* Set logo image height */
+    height: 50px;
+}
+
+header .nav-links {
+    /* Style for the navigation links */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    /* Style for individual links in the navigation bar */
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header .nav-links li a:hover {
+    /* Hover effect for navigation links */
+    color: #e67e22;
+}
+
+/* Hero Section */
+.hero.small-hero {
+    /* Background and layout for the hero section */
+    background: url('../images/contact_hero.png') no-repeat center center/cover;
+    height: 50vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero.small-hero h1 {
+    /* Style for the hero section heading */
+    font-size: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Content Section */
+.contact-content {
+    /* Layout and style for the contact content */
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-content h2 {
+    /* Style for the contact section heading */
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Contact Information */
+.contact-info {
+    /* Layout and style for the contact information section */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.contact-info div {
+    /* Style for individual contact info blocks */
+    flex: 1;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.contact-info div h3 {
+    /* Style for contact info headings */
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.contact-info div p {
+    /* Style for contact info paragraphs */
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Contact Form */
+.contact-form {
+    /* Layout and style for the contact form */
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    /* Layout for the form elements */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    /* Style for form labels */
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    /* Style for form inputs, textarea, and buttons */
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    /* Additional style for textarea */
+    resize: none;
+    height: 100px;
+}
+
+.contact-form button {
+    /* Style for the submit button */
+    background: #e67e22;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.contact-form button:hover {
+    /* Hover effect for the submit button */
+    background: #d35400;
+}
+
+/* Footer Section */
+footer {
+    /* Style for the footer */
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        /* Adjust layout for smaller screens */
+        flex-direction: column;
+    }
+}

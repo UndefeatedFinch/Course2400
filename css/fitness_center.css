@@ -1,0 +1,132 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in the element's width and height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font to the entire body */
+    line-height: 1.6; /* Set base line height */
+    background-color: #f9f9f9; /* Light gray background color */
+    color: #333; /* Dark gray text color */
+}
+
+/* Header Section */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff; /* White text color for header */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Vertically center content */
+    padding: 15px 50px; /* Padding around the header content */
+    position: fixed; /* Fixed header at the top of the page */
+    width: 100%; /* Header spans the full width of the page */
+    z-index: 1000; /* Ensure header appears above other elements */
+}
+
+header .logo img {
+    height: 50px; /* Set height for the logo image */
+}
+
+header .nav-links {
+    list-style: none; /* Remove bullet points from the navigation links */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between each navigation link */
+}
+
+header .nav-links li a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Set font size for links */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for links */
+    font-weight: 500; /* Medium font weight for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header .nav-links li a:hover {
+    color: #e67e22; /* Change text color to orange on hover */
+}
+
+/* Hero Section */
+.hero.small-hero {
+    background: url('../images/gym_hero.png') no-repeat center center/cover; /* Set background image with cover style */
+    height: 50vh; /* Hero section height: 50% of the viewport */
+    color: #fff; /* White text color for hero section */
+    text-align: center; /* Center align text */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Padding around hero content */
+}
+
+.hero.small-hero h1 {
+    font-size: 3rem; /* Large font size for hero heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font for heading */
+    font-weight: 700; /* Bold font weight for heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+/* Content Section */
+.content {
+    padding: 50px 20px; /* Add padding around the content */
+    text-align: center; /* Center align text within the content section */
+    background: #fff; /* White background color */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for content */
+}
+
+.content h2 {
+    font-size: 2.5rem; /* Large font size for section heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font for heading */
+    font-weight: 700; /* Bold font weight */
+    color: #333; /* Dark gray color for heading */
+    margin-bottom: 20px; /* Add margin below the heading */
+}
+
+.content-container {
+    display: flex; /* Flexbox for horizontal layout */
+    align-items: flex-start; /* Align content to the top */
+    gap: 30px; /* Space between image and details */
+    margin-top: 30px; /* Add margin above the container */
+}
+
+.content-container img {
+    width: 50%; /* Set image width to 50% of the container */
+    border-radius: 10px; /* Add rounded corners to the image */
+}
+
+.details {
+    text-align: left; /* Align text to the left */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for text */
+}
+
+.details h3 {
+    color: #e67e22; /* Orange color for subheadings */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font for subheadings */
+    margin-top: 20px; /* Add margin above the subheading */
+    font-size: 1.8rem; /* Set font size for subheadings */
+}
+
+.details ul {
+    margin-left: 20px; /* Add left margin for unordered lists */
+    list-style-type: disc; /* Use disc bullets for list items */
+}
+
+.details p, .details ul {
+    margin-bottom: 15px; /* Add margin below paragraphs and lists */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    color: #666; /* Light gray color for text */
+}
+
+/* Footer Section */
+footer {
+    background: #333; /* Dark gray background color for footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding above and below footer content */
+    font-size: 0.9rem; /* Smaller font size for footer text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for footer text */
+}

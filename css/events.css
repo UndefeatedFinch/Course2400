@@ -1,0 +1,168 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font for body text */
+    line-height: 1.6; /* Set base line height */
+    background-color: #f9f9f9; /* Set light gray background color */
+    color: #333; /* Set dark gray text color */
+}
+
+/* Header Section */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Vertically center items */
+    padding: 15px 50px; /* Add padding to the header */
+    position: fixed; /* Fix header at the top of the page */
+    width: 100%; /* Full width of the page */
+    z-index: 1000; /* Ensure header is above other elements */
+}
+
+header .logo img {
+    height: 50px; /* Set logo image height */
+}
+
+header .nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Flexbox for horizontal layout */
+    gap: 20px; /* Space between navigation links */
+}
+
+header .nav-links li a {
+    color: #fff; /* White text color for navigation links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Set font size */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for links */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header .nav-links li a:hover {
+    color: #e67e22; /* Change text color to orange on hover */
+}
+
+/* Hero Section */
+.hero.small-hero {
+    background: url('../images/events_hero.png') no-repeat center center/cover; /* Set background image with cover */
+    height: 50vh; /* Hero section height: 50% of viewport height */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    padding: 20px; /* Add padding around content */
+}
+
+.hero.small-hero h1 {
+    font-size: 3rem; /* Large font size for heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display for heading */
+    font-weight: 700; /* Bold font weight */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+/* Content Section */
+.content {
+    padding: 50px 20px; /* Add padding around the content */
+    text-align: center; /* Center align text */
+    background: #fff; /* White background */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+.content h2 {
+    font-size: 2.5rem; /* Large font size for subheading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+    font-weight: 700; /* Bold font weight */
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px; /* Add margin below the subheading */
+}
+
+.event-item {
+    display: flex; /* Flexbox for horizontal layout */
+    flex-direction: row; /* Set horizontal direction */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between elements */
+    background: #f9f9f9; /* Light gray background */
+    margin-bottom: 30px; /* Add margin below event item */
+    padding: 20px; /* Add padding inside event item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.event-item img {
+    width: 300px; /* Fixed width for images */
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.event-details {
+    text-align: left; /* Align text to the left */
+    flex: 1; /* Flexible width for text area */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+.event-details ul {
+    list-style: disc; /* Use disc bullets for list items */
+    margin-left: 20px; /* Add left margin for list */
+    color: #666; /* Light gray text color */
+}
+
+.event-details p {
+    font-size: 1rem; /* Regular font size for paragraphs */
+    line-height: 1.6; /* Set line height */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    color: #666; /* Light gray text color */
+}
+
+/* Button Style */
+.btn {
+    display: inline-block; /* Inline-block for buttons */
+    background: #e67e22; /* Orange background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 1rem; /* Regular font size */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-weight: 500; /* Medium font weight */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 20px; /* Add margin above buttons */
+}
+
+.btn:hover {
+    background: #d35400; /* Darker orange background on hover */
+}
+
+/* Footer Section */
+footer {
+    background: #333; /* Dark gray background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Add padding above and below footer */
+    font-size: 0.9rem; /* Smaller font size for footer text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-item {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .event-details {
+        text-align: center; /* Center align text */
+    }
+
+    .event-item img {
+        width: 100%; /* Set image to full width */
+    }
+}

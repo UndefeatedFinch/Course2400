@@ -1,0 +1,177 @@
+/* 引入字体 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    font-family: 'Roboto', sans-serif;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header .nav-links li a:hover {
+    color: #e67e22;
+}
+
+/* Hero Section */
+.hero.small-hero {
+    background: url('../images/room_hero.png') no-repeat center center/cover;
+    height: 50vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+.hero.small-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Content Section */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Room Item */
+.room-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: #f9f9f9;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.room-details {
+    flex: 2;
+    text-align: left;
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.room-details h3 {
+    color: #e67e22;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.room-details p {
+    margin-bottom: 20px;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.room-details .btn {
+    background: #e67e22;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.room-details .btn:hover {
+    background: #d35400;
+    transform: translateY(-2px);
+}
+
+/* Footer Section */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .room-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room-details {
+        text-align: center;
+        padding: 0;
+    }
+
+    .room-item img {
+        max-width: 100%;
+    }
+}

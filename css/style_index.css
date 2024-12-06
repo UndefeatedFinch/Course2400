@@ -1,0 +1,236 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@400;700&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for the body */
+    line-height: 1.6; /* Set base line height */
+    background-color: #f9f9f9; /* Light gray background */
+    color: #333; /* Dark gray text color */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Section */
+header {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between logo and navigation */
+    align-items: center; /* Vertically center items */
+    padding: 15px 50px; /* Add padding around header */
+    position: fixed; /* Fixed position at the top */
+    width: 100%; /* Full width of the viewport */
+    z-index: 1000; /* Ensure header is above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+header .logo img {
+    height: 50px; /* Set height for the logo image */
+}
+
+header .nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    gap: 20px; /* Space between navigation links */
+}
+
+header .nav-links li a {
+    color: #fff; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1rem; /* Set font size for links */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-weight: 500; /* Medium font weight */
+    padding: 8px 15px; /* Add padding around links */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+header .nav-links li a:hover {
+    background: #e67e22; /* Orange background on hover */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh; /* Hero section height: 100% of viewport */
+    background: url('../images/lobby.png') no-repeat center center/cover; /* Full-cover background image */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center align text */
+    color: #fff; /* White text color */
+    padding: 20px; /* Add padding around hero content */
+}
+
+.hero h1 {
+    font-size: 3rem; /* Large font size for heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+    margin-bottom: 10px; /* Margin below heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+.hero p {
+    font-size: 1.2rem; /* Set font size for paragraph */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    margin-bottom: 20px; /* Add margin below paragraph */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Add light shadow for visibility */
+}
+
+.hero .btn {
+    background: #e67e22; /* Orange background color */
+    color: #fff; /* White text color */
+    padding: 15px 30px; /* Padding around button */
+    text-decoration: none; /* Remove underline from button text */
+    font-size: 1.2rem; /* Set font size for button text */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-weight: 500; /* Medium font weight */
+    border-radius: 5px; /* Rounded corners for button */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: background 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hero .btn:hover {
+    background: #d35400; /* Darker orange on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+/* About Section */
+.about {
+    padding: 80px 50px; /* Padding around section */
+    background: #fff; /* White background */
+    text-align: center; /* Center align text */
+}
+
+.about h2 {
+    font-size: 2.5rem; /* Large font size for heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 20px; /* Add margin below heading */
+}
+
+.about p {
+    font-size: 1.2rem; /* Set font size for paragraph */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    color: #666; /* Light gray text color */
+    line-height: 1.8; /* Increase line spacing */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align the paragraph */
+}
+
+/* Services Section */
+.services {
+    padding: 80px 50px; /* Padding around section */
+    background: #f4f4f4; /* Light gray background */
+    text-align: center; /* Center align text */
+}
+
+.services h2 {
+    font-size: 2.5rem; /* Large font size for heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 30px; /* Add margin below heading */
+}
+
+/* Parent container for service items */
+.service-container {
+    display: grid; /* Use grid layout for services */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+}
+
+.service-item {
+    background: #fff; /* White background for service items */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    padding: 20px; /* Padding inside service items */
+    text-align: center; /* Center align text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.service-item img {
+    width: 100%; /* Image takes full width of container */
+    border-radius: 10px; /* Rounded corners for image */
+    margin-bottom: 15px; /* Margin below image */
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Move service item upwards on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for hover effect */
+}
+
+.service-item h3 {
+    font-size: 1.5rem; /* Font size for service item heading */
+    font-family: 'Playfair Display', serif; /* Use Playfair Display font */
+    color: #333; /* Dark gray text color */
+    margin-bottom: 10px; /* Margin below heading */
+}
+
+.service-item p {
+    font-size: 1rem; /* Font size for paragraph */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    color: #666; /* Light gray text color */
+    line-height: 1.5; /* Line spacing for readability */
+}
+
+/* Footer Section */
+footer {
+    background: #333; /* Dark gray background for footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Padding above and below footer content */
+    font-size: 0.9rem; /* Smaller font size for footer */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .nav-links {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Space between stacked links */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Reduce heading size for smaller screens */
+    }
+
+    .service-container {
+        flex-direction: column; /* Stack service items vertically */
+        gap: 30px; /* Space between service items */
+    }
+
+    .service-item {
+        width: 80%; /* Reduce width for service items */
+        margin: 0 auto; /* Center service items */
+    }
+}
+
+/* Multimedia Section */
+.about-multimedia {
+    display: flex; /* Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-top: 30px; /* Margin above multimedia section */
+}
+
+/* Video Container */
+.video-container {
+    width: 90%; /* Default width is 90% of the viewport */
+    max-width: 800px; /* Set maximum width */
+    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
+    overflow: hidden; /* Hide any overflow content */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
+.video-container video {
+    width: 100%; /* Video takes full width of container */
+    height: 100%; /* Video height adjusts to container */
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+}
